@@ -1,6 +1,8 @@
 import { Document, Schema, model, models } from "mongoose";
 
 export interface IImage extends Document {
+  map(arg0: (image: IImage) => import("react").JSX.Element): import("react").ReactNode;
+  length: number;
   title: string;
   transformationType: string;
   publicId: string;
