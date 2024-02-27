@@ -38,7 +38,7 @@ const Checkout = ({
         });
       } catch (error) {
         // Handle error
-        console.error("Error during checkout:", error);
+        console.log("Error during checkout:", error);
         toast({
           title: "Error during checkout",
           description: "Please try again later",
